@@ -1,0 +1,21 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: apache2
+spec:
+  components:
+    - name: apache2
+      type: webservice
+      properties:
+        image: ubuntu/apache2:latest
+        cpu: "0.1"
+        memory: 128Mi
+        ports: 
+          - port: 80
+            expose: true 
+      traits:
+        - type: napptive-ingress
+          properties:
+            name: apache2
+            port: 80
+            path: /

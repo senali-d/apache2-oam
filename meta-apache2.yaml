@@ -1,0 +1,19 @@
+apiVersion: core.napptive.com/v1alpha1
+kind: ApplicationMetadata 
+name: "apache2"
+version: 2.4.0
+description: "This application is for deploying an apache2 instance"
+keywords: 
+  - "apache2"
+  - "Server"
+  - "ubuntu"
+  - "Apache"
+  - "storage"
+# Provide license
+license: "Apache License Version 2.0"
+url: "https://hub.docker.com/r/ubuntu/apache2"
+doc: "https://httpd.apache.org/"
+logo:
+  - src: "https://www.apache.org/images/SupportApache-small.png"
+    type: "image/png"
+    size: "120x120"
